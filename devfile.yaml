@@ -9,7 +9,7 @@ components:
       image: ghcr.io/ansible/community-ansible-dev-tools:latest
       memoryLimit: 2Gi
       memoryRequest: 256Mi
-      env:
-        - name: 'KUBEDOCK_ENABLED'
-          value: 'true'
+    env:
+      - name: 'KUBEDOCK_ENABLED'
+        value: 'true'
 
