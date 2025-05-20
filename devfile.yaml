@@ -1,0 +1,11 @@
+# cspell: disable=devspaces
+schemaVersion: 2.2.2
+metadata:
+  name: ansible-demo
+components:
+  - name: tooling-container
+    container:
+      image: ghcr.io/ansible/community-ansible-dev-tools:latest
+      env:
+        - name: 'KUBEDOCK_ENABLED'
+          value: 'true'
