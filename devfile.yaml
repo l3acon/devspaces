@@ -1,11 +1,16 @@
-# cspell: disable=devspaces
 schemaVersion: 2.2.2
+attributes:
+  controller.devfile.io/storage-type: ephemeral
 metadata:
   name: matts-devfile
 components:
   - name: tooling-container
     container:
+      name: community-dev-tools
       image: ghcr.io/ansible/community-ansible-dev-tools:latest
+      memoryLimit: 2Gi
+      memoryRequest: 256Mi
       env:
         - name: 'KUBEDOCK_ENABLED'
           value: 'true'
+
