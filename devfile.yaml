@@ -6,7 +6,6 @@ metadata:
 components:
   - name: tooling-container
     container:
-      name: community-dev-tools
       image: ghcr.io/ansible/community-ansible-dev-tools:latest
       memoryLimit: 2Gi
       memoryRequest: 256Mi
